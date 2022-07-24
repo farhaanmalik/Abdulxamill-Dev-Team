@@ -1,0 +1,852 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ABDULXAMILL_DEV TEAM</title>
+
+  <link rel="icon" type="image/favicon" href="images/favicon.png">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+  <!-- Boxicons CDN Link -->
+  <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="style.css">
+
+  <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+  
+  <!-- <script>
+  http://democheck.epizy.com/index.html
+
+var message = "This page is no longer active";
+
+function rtclickcheck(keyp){ if (navigator.appName == "Netscape" && keyp.which == 3){ alert(message); return false; }
+
+if (navigator.appVersion.indexOf("MSIE") != -1 && event.button == 2) { alert(message); return false; } }
+
+document.onmousedown = rtclickcheck;
+  </script> -->
+</head>
+<body>
+  <!-- navigation -->
+  <nav>
+    <div class="navbar">
+      <i class='bx bx-menu'></i>
+      <div class="logo"><a href="#"><img src="images/logo.png" alt="" width="180px"></a></div>
+      <div class="nav-links">
+        <div class="sidebar-logo">
+          <span class="logo-name"><img src="images/logo.png" alt="" width="150px"></span>
+          <i class='bx bx-x'></i>
+        </div>
+        <ul class="links">
+          <li><a href="index.html" class="active">HOME</a></li>
+          <li>
+            <a href="#">SERVICES</a>
+            <i class='bx bxs-chevron-down service-arrow arrow '></i>
+            <ul class="services-sub-menu sub-menu">
+              <li><a href="game.html">GAME DEVELOPMENT</a></li>
+              <li><a href="nft.html">NFT DEVELOPMENT</a></li>
+              <li><a href="art&dsgn.html">ART & DESIGN</a></li>
+              <li><a href="web.html">WEB DEVELOPMENT</a></li>
+              <li><a href="vr-ar.html">VR & AR SOLUTIONS</a></li>
+              <li><a href="enterprise.html">ENTERPRISES SERVICES</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="our-work.html">OUR WORK</a>
+            <i class='bx bxs-chevron-down work-arrow arrow '></i>
+            <ul class="ourwork-sub-menu sub-menu">
+              <li><a href="gam-work.html">GAME</a></li>
+              <li><a href="art-work.html">ART & DESIGN</a></li>
+              <li><a href="entrprs-work.html">ENTERPRISE APPS</a></li>
+              <li><a href="vr-work.html">VR SIMULATION</a></li>
+              <li><a href="augmented-work.html">AUGMENTED REALITY</a></li>
+            </ul>
+          </li>
+          <li><a href="case.html">CASE STUDIES</a></li>
+          <li>
+            <a href="#">ABOUT US</a>
+            <i class='bx bxs-chevron-down about-arrow arrow '></i>
+            <ul class="aboutus-sub-menu sub-menu">
+              <li><a href="overview.html">OVERVIEW</a></li>
+              <li><a href="clientele.html">CLIENTELE</a></li>
+              <li><a href="testimonials.html">TESTIMONIALS</a></li>
+            </ul>
+          </li>
+          <li><a href="contact.html">CONTACT US</a></li>
+        </ul>
+      </div>
+      <div class="blank"></div>
+    </div>
+  </nav>
+
+<!-- home-section -->
+<div class="home-section" id="home">
+  <div class="banner">
+    <div class="content">
+      <h1>A Mobile Games, App <br> & Web Development Teams</h1>
+      <p>We Create Spectacular Games That People Love To Play</p>
+    </div>
+    <div class="slide-btns"> 
+      <a href="game.html" class="slide-btn1">Know More</a> 
+      <a href="contact.html" class="slide-btn2">Contact Us</a>
+    </div>
+  </div>
+</div>
+
+<div class="service-section row-1">
+  <div class="service-head row-2">
+    <p class="srvc-content">A LEADING AND INNOVATIVE TECHNOLOGY COMPANY SPECIALIZING IN GAME DEVELOPMENT, ART & DESIGN, AR, VR, APPS, AND MORE.</p>
+    <p class="head col-1">SERVICES & SOLUTIONS</p>
+    <p class="provide col-2">What we offer</p>
+  </div>
+  <div class="text-1">
+    <p>ABDULXAMILL_DEV TEAM offers end-to-end solutions in native and cross-platform for those looking to hire App, game development companies experienced in Unity3D, Cocos2d-X, PlayCanvas, Unreal, Xamarin, hybrids app development frameworks, and specialized in AR, VR & IoT solutions.</p>
+  </div>
+  <div class="service-icons">
+    <ul class="icons">
+      <li class="game">
+        <button class="tablinks active" onclick="service(event, 'Game')" id="defaultOpen" >
+          <img src="images/srvc-img/game.png" style="display: block;" alt="game" onmouseover="this.src='images/srvc-img/GameDevelopmntIcon_Hvr.png'" onmouseleave="this.src='images/srvc-img/game.png'">Game <br> Development
+        </button>
+      </li>
+     
+      
+      <li class="art">
+        <button  class="tablinks" onclick="service(event, 'Art')">
+          <img src="images/srvc-img/artdesign.png" style="display: block;" alt="art&design" onmouseover="this.src='images/srvc-img/ArtDesign_Hvr.png'" onmouseleave="this.src='images/srvc-img/artdesign.png'">Art & Design
+        </button>
+      </li>
+      
+      <li class="enterprise">
+        <button class="tablinks" onclick="service(event, 'Enterprises')">
+          <img src="images/srvc-img/mobile.png" style="display: block;" alt="emterprises" onmouseover="this.src='images/srvc-img/EnterpriseAppSolutions_Hvr.png'" onmouseleave="this.src='images/srvc-img/mobile.png'">Enterprises <br> solutions
+        </button>
+      </li>
+
+      <li class="web">
+        <button class="tablinks" onclick="service(event, 'Web')">
+          <img src="images/srvc-img/webdevlopment.png" style="display: block;" alt="web" onmouseover="this.src='images/srvc-img/WebDevlopment_Hvr.png'" onmouseleave="this.src='images/srvc-img/webdevlopment.png'">web development
+        </button>
+      </li>
+
+      <li class="ar-vr">
+        <button class="tablinks" onclick="service(event, 'VR-AR')">
+          <img src="images/srvc-img/vr-ar.png" style="display: block;" alt="vr-ar" onmouseover="this.src='images/srvc-img/VRARSolutions_Hvr.png'" onmouseleave="this.src='images/srvc-img/vr-ar.png'">Vr & Ar <br> Solutions
+        </button>
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
+<div class="service-icons-dtls">
+  <div class="gam-dev tabcontent"  id="Game">
+    <ul class="icons">
+      <li>
+        <a href="#">
+          <img src="images/game-img/GD_ARGameDev.png" onmouseover="this.src='images/game-img/GD_ARGameDev_Hvr.png'" onmouseleave="this.src='images/game-img/GD_ARGameDev.png'" style="display: block;" alt="game">Augmented Reality <br> Development
+        </a>
+      </li>
+
+      <li>
+        <a href="#">
+          <img src="images/game-img/MoreGameDev_Html.png" onmouseover="this.src='images/game-img/MoreGameDev_Html-hvr.png'" onmouseleave="this.src='images/game-img/MoreGameDev_Html.png'" style="display: block;" alt="emterprises">HTML5 Game <br> Development
+        </a>
+      </li>
+
+      <li>
+        <a href="#">
+          <img src="images/game-img/GD_DesktopGameDev.png" onmouseover="this.src='images/game-img/GD_DesktopGameDev_Hvr.png'" onmouseleave="this.src='images/game-img/GD_DesktopGameDev.png'" style="display: block;" alt="art&design">DeskTop Game <br> Development
+        </a>
+      </li>
+
+      <li>
+        <a href="#">
+          <img src="images/game-img/RH_Unity.png" onmouseover="this.src='images/game-img/RH_Unity_Hvr.png'" onmouseleave="this.src='images/game-img/RH_Unity.png'" style="display: block;" alt="vr-ar">Unity3D Game <br> Development
+        </a>
+      </li>
+
+      <li>
+        <a href="#">
+          <img src="images/game-img/GD_MobileGameDev.png" onmouseover="this.src='images/game-img/GD_MobileGameDev_Hvr.png'" onmouseleave="this.src='images/game-img/GD_MobileGameDev.png'" style="display: block;" alt="web">Mobile Game <br> Development
+        </a>
+      </li>
+    </ul>
+    <div class="sr-more-btn">
+      <a href="game.html">View More</a>
+    </div>
+  </div>
+
+  <div class="entr-sol tabcontent" id="Enterprises">
+    <ul class="icons">
+      <li>
+        <a href="#">
+          <img src="images/entr-sol-img/ES_AiMachineLearning.png" onmouseover="this.src='images/entr-sol-img/ES_AiMachineLearning_Hvr.png'" onmouseleave="this.src='images/entr-sol-img/ES_AiMachineLearning.png'" style="display: block;" alt="ES_AiMachineLearning">AI & Machine <br> Learning
+        </a>
+      </li>
+
+      <li>
+        <a href="#">
+          <img src="images/entr-sol-img/ES_Iot.png" onmouseover="this.src='images/entr-sol-img/ES_Iot_Hvr.png'" onmouseleave="this.src='images/entr-sol-img/ES_Iot.png'" style="display: block;" alt="ES_Iot">IOT
+        </a>
+      </li>
+
+      <li>
+        <a href="#">
+          <img src="images/entr-sol-img/ES_GamifiedApp.png" onmouseover="this.src='images/entr-sol-img/ES_GamifiedApp_Hvr.png'" onmouseleave="this.src='images/entr-sol-img/ES_GamifiedApp.png'" style="display: block;" alt="ES_GamifiedApp">Gamified <br> Application
+        </a>
+      </li>
+
+      <li>
+        <a href="#">
+          <img src="images/entr-sol-img/big-data-icon.png" onmouseover="this.src='images/entr-sol-img/big-data-icon-hvr.png'" onmouseleave="this.src='images/entr-sol-img/big-data-icon.png'" style="display: block;" alt="big-data-icon">Big Data
+        </a>
+      </li>
+
+      <li>
+        <a href="#">
+          <img src="images/entr-sol-img/ES_Application.png" onmouseover="this.src='images/entr-sol-img/ES_Application_Hvr.png'" onmouseleave="this.src='images/entr-sol-img/ES_Application.png'" style="display: block;" alt="ES_Application">Mobile Application <br> Development
+        </a>
+      </li>
+    </ul>
+    <div class="sr-more-btn">
+      <a href="enterprise.html">View More</a>
+    </div>
+  </div>
+
+  <div class="art-dgn tabcontent" id="Art">
+    <ul class="icons">
+      <li>
+        <a href="#">
+          <img src="images/art-dgn-img/Art_PreProduction.png" onmouseover="this.src='images/art-dgn-img/Art_PreProduction-hvr.png'" onmouseleave="this.src='images/art-dgn-img/Art_PreProduction.png'" style="display: block;" alt="game">Pre-Production
+        </a>
+      </li>
+
+      <li>
+        <a href="#">
+          <img src="images/art-dgn-img/Art_UI.png" onmouseover="this.src='images/art-dgn-img/Art_UI-hvr.png'" onmouseleave="this.src='images/art-dgn-img/Art_UI.png'" style="display: block;" alt="emterprises">UI/UX Design
+        </a>
+      </li>
+
+      <li>
+        <a href="#">
+          <img src="images/art-dgn-img/Art_AssetProduction.png" onmouseover="this.src='images/art-dgn-img/Art_AssetProduction-hvr.png'" onmouseleave="this.src='images/art-dgn-img/Art_AssetProduction.png'" style="display: block;" alt="art&design">Asset Production
+        </a>
+      </li>
+
+      <li>
+        <a href="#">
+          <img src="images/art-dgn-img/Art_Animation.png" onmouseover="this.src='images/art-dgn-img/Art_Animation-hvr.png'" onmouseleave="this.src='images/art-dgn-img/Art_Animation.png'" style="display: block;" alt="vr-ar">Animation
+        </a>
+      </li>
+    </ul>
+    <div class="sr-more-btn">
+      <a href="art&dsgn.html">View More</a>
+    </div>
+  </div>
+
+  <div class="vr-ar tabcontent" id="VR-AR">
+    <ul class="icons">
+      <li>
+        <a href="#">
+          <img src="images/vr-ar-img/ARVR_ArAppDev.png" onmouseover="this.src='images/vr-ar-img/ARVR_ArAppDev_Hvr.png'" onmouseleave="this.src='images/vr-ar-img/ARVR_ArAppDev.png'" style="display: block;" alt="game">AR App <br> Development
+        </a>
+      </li>
+
+      <li>
+        <a href="#">
+          <img src="images/vr-ar-img/ARVR_VrAppDev.png" onmouseover="this.src='images/vr-ar-img/ARVR_VrAppDev_Hvr.png'" onmouseleave="this.src='images/vr-ar-img/ARVR_VrAppDev.png'" style="display: block;" alt="emterprises">VR App <br>Development
+        </a>
+      </li>
+
+      <li>
+        <a href="#">
+          <img src="images/vr-ar-img/ARVR_WebXRDev.png" onmouseover="this.src='images/vr-ar-img/ARVR_WebXRDev_Hvr.png'" onmouseleave="this.src='images/vr-ar-img/ARVR_WebXRDev.png'" style="display: block;" alt="art&design">WebXR <br> Development
+        </a>
+      </li>
+    </ul>
+    <div class="sr-more-btn">
+      <a href="vr-ar.html">View More</a>
+    </div>
+  </div>
+
+  <div class="web-dev tabcontent" id="Web">
+    <ul class="icons">
+      <li>
+        <a href="#">
+          <img src="images/web-dev-img/WD_NodeJs.png" onmouseover="this.src='images/web-dev-img/WD_NodeJs_hvr.png'" onmouseleave="this.src='images/web-dev-img/WD_NodeJs.png'" style="display: block;" alt="game">Node JS <br> Development
+        </a>
+      </li>
+
+      <li>
+        <a href="#">
+          <img src="images/web-dev-img/WD_Php.png" onmouseover="this.src='images/web-dev-img/WD_Php_Hvr.png'" onmouseleave="this.src='img/web-dev-img/WD_Php.png'" style="display: block;" alt="emterprises">PHP Development
+        </a>
+      </li>
+
+      <li>
+        <a href="#">
+          <img src="images/web-dev-img/WD_Asp.png" onmouseover="this.src='images/web-dev-img/WD_Asp_Hvr.png'" onmouseleave="this.src='images/web-dev-img/WD_Asp.png'" style="display: block;" alt="art&design">ASp.net <br> Development 
+        </a>
+      </li>
+
+      <li>
+        <a href="#">
+          <img src="images/web-dev-img/WD_React.png" onmouseover="this.src='images/web-dev-img/WD_React_Hvr.png'" onmouseleave="this.src='images/web-dev-img/WD_React.png'" style="display: block;" alt="vr-ar">React Development
+        </a>
+      </li>
+
+      <li>
+        <a href="#">
+          <img src="images/web-dev-img/WD_Aungular.png" onmouseover="this.src='images/web-dev-img/WD_Aungular_hvr.png'" onmouseleave="this.src='images/web-dev-img/WD_Aungular.png'" style="display: block;" alt="web">Angular <br> Development
+        </a>
+      </li>
+    </ul>
+    <div class="sr-more-btn">
+      <a href="web.html">View More</a>
+    </div>
+  </div>
+</div>
+
+<!-- 
+NFT Development service -->
+<div class="case-section" style="background-color: #f3f3f3cd; border-bottom: 1px solid #ececec;">
+  <div class="study" >
+    <div class="case-head row-2">
+      <p class="head col-1">NFT DEVELOPMENT SERVICES</p>
+    </div>
+    <div class="work-portfolio">
+      <div class="work">
+          <div class="case-img">
+            <a href="nft-game.html">
+              <img src="images/nft-img/nft.webp" alt="" class="image">
+              NFT GAME DEVELOPMENT
+            </a>
+          </div>
+          <div class="case-img">
+            <a href="nft-market.html">
+              <img src="images/nft-img/NFT-Marketplace-Development.png" alt="" class="image">
+              NFT MARKETPLACE DEVELOPMENT
+            </a>
+          </div>
+          <div class="case-img">
+            <a href="nft-minting.html">
+              <img src="images/nft-img/minting-nft-image.webp" alt="" class="image">
+              NFT MINTING DEVELOPMENT
+            </a>
+          </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ===Client-section=== -->
+<div class="client-section row-1">
+  <div class="client-head row-2">
+    <p class="head col-1">CLIENTELE</p>
+    <p class="worked col-2">Brands We Worked For</p>
+  </div>
+  <div class="text-1">
+    <p>We have the pleasure and privilege of working with a wide variety of technology ventures, brands, and enterprises. The clientele of our gaming studio includes entrepreneurs, startups, small and mid-sized enterprises, and Fortune 500 companies.</p>
+  </div>
+
+  <div class="client-btn">
+    <ul class="btn">
+      <li><button class="client_tablink active" onclick="client(event, 'All')" id="defaultSet">all</button></li>
+     
+      <li><button class="client_tablink" onclick="client(event, 'Gaming')">gaming</button></li>
+      
+      <li><button  class="client_tablink" onclick="client(event, 'Enterprise')">enterprise</button></li>
+      
+      <li><button class="client_tablink" onclick="client(event, 'Learning')">learning & learning</button></li>
+      
+      <li><button class="client_tablink" onclick="client(event, 'Media')">media & entertainment</button></li>
+    </ul>
+  </div>
+
+  <div class="client-img tab_contents" id="All">
+    <div class="img">
+      <img src="images/client-img/all/BadRhino.jpg" alt="ieee">
+    </div>
+    <div class="img">
+      <img src="images/client-img/all/Behaviour-interactive.jpg" alt="flipkart">
+    </div>
+    <div class="img">
+      <img src="images/client-img/all/Disney.jpg" alt="Disney">
+    </div>
+    <div class="img">
+      <img src="images/client-img/all/ilka.jpg" alt="amzon">
+    </div>
+    <div class="img">
+      <img src="images/client-img/all/Infobells.jpg" alt="endb">
+    </div>
+    <div class="img">
+      <img src="images/client-img/all/McKinsey.jpg" alt="Disney">
+    </div>
+    <div class="img">
+      <img src="images/client-img/all/NitroGames.jpg" alt="amzon">
+    </div>
+    <div class="img">
+      <img src="images/client-img/all/PitchLink.jpg" alt="gws">
+    </div>
+    <div class="img">
+      <img src="images/client-img/all/SSBS.jpg" alt="wb">
+    </div>
+    <div class="img">
+      <img src="images/client-img/all/Strides.jpg" alt="byju">
+    </div>
+    <div class="img">
+      <img src="images/client-img/all/Strongwatch.jpg" alt="flipkart">
+    </div>
+    <div class="img">
+      <img src="images/client-img/all/TicTac.jpg" alt="gws">
+    </div>
+  </div>
+
+  <div class="client-img tab_contents" id="Gaming">
+    <div class="img">
+      <img src="images/client-img/game/Disney.jpg" alt="Disney">
+    </div>
+    <div class="img">
+      <img src="images/client-img/game/Animoca.jpg" alt="amzon">
+    </div>
+    <div class="img">
+      <img src="images/client-img/game/Behaviour-interactive.jpg" alt="endb">
+    </div>
+    <div class="img">
+      <img src="images/client-img/game/GamesWorkShop.jpg" alt="Disney">
+    </div>
+    <div class="img">
+      <img src="images/client-img/game/BadRhino.jpg" alt="endb">
+    </div>
+    <div class="img">
+      <img src="images/client-img/game/Mpl.jpg" alt="Disney">
+    </div>
+    <div class="img">
+      <img src="images/client-img/game/Mentez.jpg" alt="amzon">
+    </div>
+    <div class="img">
+      <img src="images/client-img/game/Nazara.jpg" alt="gws">
+    </div>
+    <div class="img">
+      <img src="images/client-img/game/NitroGames.jpg" alt="wb">
+    </div>
+    <div class="img">
+      <img src="images/client-img/game/superhippo.jpg" alt="byju">
+    </div>
+    <div class="img">
+      <img src="images/client-img/game/TimeWarner.jpg" alt="flipkart">
+    </div>
+    <div class="img">
+      <img src="images/client-img/game/WB.jpg" alt="gws">
+    </div>
+  </div>
+
+  <div class="client-img tab_contents" id="Enterprise">
+    <div class="img">
+      <img src="images/client-img/enterprise/ColoradoTimberland.jpg" alt="gws">
+    </div>
+    <div class="img">
+      <img src="images/client-img/enterprise/Amzon.jpg" alt="wb">
+    </div>
+    <div class="img">
+      <img src="images/client-img/enterprise/Htc.jpg" alt="byju">
+    </div>
+    <div class="img">
+      <img src="images/client-img/enterprise/Ieee.jpg" alt="flipkart">
+    </div>
+    <div class="img">
+      <img src="images/client-img/enterprise/flipkart.jpg" alt="endb">
+    </div>
+    <div class="img">
+      <img src="images/client-img/enterprise/Ingersoll-Rand.jpg" alt="Disney">
+    </div>
+    <div class="img">
+      <img src="images/client-img/enterprise/Enbd.jpg" alt="amzon">
+    </div>
+    <div class="img">
+      <img src="images/client-img/enterprise/Strongwatch.jpg" alt="gws">
+    </div>
+    <div class="img">
+      <img src="images/client-img/enterprise/Strides.jpg" alt="wb">
+    </div>
+    <div class="img">
+      <img src="images/client-img/enterprise/SSBS.jpg" alt="byju">
+    </div>
+    <div class="img">
+      <img src="images/client-img/enterprise/NielSon.jpg" alt="flipkart">
+    </div>
+    <div class="img">
+      <img src="images/client-img/enterprise/Synchrony.jpg" alt="gws">
+    </div>
+  </div>
+
+  <div class="client-img tab_contents" id="Learning">
+    <div class="img">
+      <img src="images/client-img/educate/3Doragan.jpg" alt="amzon">
+    </div>
+    <div class="img">
+      <img src="images/client-img/educate/Byju_s.jpg" alt="gws">
+    </div>
+    <div class="img">
+      <img src="images/client-img/educate/SunPharma.jpg" alt="wb">
+    </div>
+    <div class="img">
+      <img src="images/client-img/educate/Strongwatch.jpg" alt="byju">
+    </div>
+    <div class="img">
+      <img src="images/client-img/educate/Poptropica.jpg" alt="endb">
+    </div>
+    <div class="img">
+      <img src="images/client-img/educate/Mezmedia.jpg" alt="Disney">
+    </div>
+    <div class="img">
+      <img src="images/client-img/educate/LettersSchool.jpg" alt="amzon">
+    </div>
+    <div class="img">
+      <img src="images/client-img/educate/Infobells.jpg" alt="gws">
+    </div>
+    <div class="img">
+      <img src="images/client-img/educate/ilka.jpg" alt="wb">
+    </div>
+    <div class="img">
+      <img src="images/client-img/educate/hopster.jpg" alt="byju">
+    </div>
+    <div class="img">
+      <img src="images/client-img/educate/Ferrroro.jpg" alt="flipkart">
+    </div>
+    <div class="img">
+      <img src="images/client-img/educate/HITN.jpg" alt="gws">
+    </div>
+  </div>
+
+  <div class="client-img tab_contents" id="Media">
+    <div class="img">
+      <img src="images/client-img/media/amd.jpg" alt="wb">
+    </div>
+    <div class="img">
+      <img src="images/client-img/media/Britannia.jpg" alt="byju">
+    </div>
+    <div class="img">
+      <img src="images/client-img/media/CocaCola.jpg" alt="flipkart">
+    </div>
+    <div class="img">
+      <img src="images/client-img/media/Digital711.jpg" alt="gws">
+    </div>
+    <div class="img">
+      <img src="images/client-img/media/Garfield-Eats.jpg" alt="endb">
+    </div>
+    <div class="img">
+      <img src="images/client-img/media/Hike.jpg" alt="Disney">
+    </div>
+    <div class="img">
+      <img src="images/client-img/media/Home-lane.jpg" alt="amzon">
+    </div>
+    <div class="img">
+      <img src="images/client-img/media/McKinsey.jpg" alt="gws">
+    </div>
+    <div class="img">
+      <img src="images/client-img/media/TicTac.jpg" alt="wb">
+    </div>
+    <div class="img">
+      <img src="images/client-img/media/Wrogn.jpg" alt="byju">
+    </div>
+    <div class="img">
+      <img src="images/client-img/media/PitchLink.jpg" alt="flipkart">
+    </div>
+    <div class="img">
+      <img src="images/client-img/media/LionsGate.jpg" alt="gws">
+    </div>
+  </div>
+</div>
+
+<div class="review-section row-1">
+  <div class="review-head row-2">
+    <p class="head col-1">TESTIMONIALS</p>
+    <p class="head col-2">What our clients say</p>
+  </div>
+  <div class="text-1">
+    <p>We are very fortunate to have formed excellent partnerships with many of our clients. And we’ve developed more than just professional relationships with them. Here is what they are saying about us.</p>
+  </div>
+  <div class="testimonials">
+    <div class="review" id="review1">
+      <h2 class="name">Vaibhavi Parikh</h2>
+      <p class="abt">General Manager, Erosnow Games</p>
+      <p>We partnered with ABDULXAMILL_DEV TEAM for the development of Munna Michael, a Bollywood based game & they did a terrific job. Our main concern was to develop a good game within specific timelines and they delivered a quality product. They also help us with theme/event-based updates on a regular basis.</p>
+    </div>
+    <div class="review" id="review1">
+      <h2 class="name">Mathew Butler</h2>
+      <p class="abt">Mobile Center of Excellence , IEEE</p>
+      <p>I want to reach out ABDULXAMILL_DEV TEAM and thank you for all the great work on the SSCS mobile application. Its been a pleasure working with ABDULXAMILL_DEV TEAM on this project and looking forward to partnering with team again in the future.</p>
+    </div>
+    <div class="review" id="review1">
+      <h2 class="name">Mathew Butler</h2>
+      <p class="abt">Mobile Center of Excellence , IEEE</p>
+      <p>I want to reach out ABDULXAMILL_DEV TEAM and thank you for all the great work on the SSCS mobile application. Its been a pleasure working with ABDULXAMILL_DEV TEAM on this project and looking forward to partnering with team again in the future.</p>
+    </div>
+    <div class="review" id="review1">
+      <h2 class="name">Vaibhavi Parikh</h2>
+      <p class="abt">General Manager, Erosnow Games</p>
+      <p>We partnered with ABDULXAMILL_DEV TEAM for the development of Munna Michael, a Bollywood based game & they did a terrific job. Our main concern was to develop a good game within specific timelines and they delivered a quality product. They also help us with theme/event-based updates on a regular basis.</p>
+    </div>
+  </div>
+  <div class="more-btn">
+    <a href="testimonials.html">View More</a>
+  </div>
+</div>
+
+<div class="work-section row-1">
+  <div class="work-head row-2">
+    <p class="head col-1">WHY CHOOSE TO WORK WITH US ?</p>
+  </div>
+  <div class="text-1">
+    <p>ABDULXAMILL_DEV TEAM, a game studio, takes pride in having solid experience of many years in providing game and app development services to clients in the USA, UK, UAE, India, and other parts of the world. Our standards are on par with the top game and app development companies and technology ventures in the industry today.</p>
+  </div>
+  <div class="wrk-us">
+    <div class="box">
+      <h2 class="col-3">Scrum Methodology</h2>
+      <p>We incorporate all reviews and client feedback in the development process through our cross-functional team structure and collaborative approach. By doing so, we obtain satisfactory outcomes on time without compromising on cost or quality.</p>
+    </div>
+    <div class="box">
+      <h2 class="col-3">Comprehensive Solutions</h2>
+      <p>At our gaming studio, we provide services to cover all aspects of game and app creation, ranging from concept art and prototyping to coding and testing. Our comprehensive services save our partners the trouble of managing multiple teams and allows them to focus on core business objectives.</p>
+    </div>
+    <div class="box">
+      <h2 class="col-3">Collaborative Approach</h2>
+      <p>We know that the best products are built due to creative collaboration and hence believe in adopting a partnership approach with all clients. We work with you to fully understand the potential of your project so that our team can fulfill your requirements.</p>
+    </div>
+  </div>
+</div>
+
+<div class="case-section">
+  <div class="study row-1">
+    <div class="case-head row-2">
+      <p class="head col-1">CASE STUDIES</p>
+      <p class="head col-2">An inside look at some of our projects</p>
+    </div>
+    <div class="case-link">
+      <div class="case-img">
+        <a href="#">
+          <img src="images/case-img/gamification-app-1.jpg" alt="" class="image">
+          GAMIFICATION APP
+        </a>
+      </div>
+      <div class="case-img">
+        <a href="#">
+          <img src="images/case-img/gamified-edutainment-apps.jpg" alt="" class="image">
+          GAMIFIED EDUTAINMENT APP
+        </a>
+      </div>
+      <div class="case-img">
+        <a href="#">
+          <img src="images/case-img/ar-based-food-menu.jpg" alt="" class="image">
+          AR BASED FOOD MENU
+        </a>
+      </div>
+      <div class="case-img">
+        <a href="#">
+          <img src="images/case-img/vr-for-real-estate.jpg" alt="" class="image">
+          VR FOR REAL-ESTATE
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="more-btn">
+    <a href="case.html">View More</a>
+  </div>
+</div>
+
+<div class="porfolio row-1">
+  <div class="case-head row-2">
+    <p class="head col-1">PORTFOLIO</p>
+    <p class="head col-2">Recent games & apps developed by us</p>
+  </div>
+  <div class="portfolio-img">
+    <div class="col-lg-4 portfolio-1">
+      <div class="portfolio">
+        <div class="portfolio-image">
+          <img src="images/portfolio/PortfolioWeb2020_SCS.jpg" alt="PortfolioWeb2020_SCS">
+        </div>
+        <div class="portfolio-details">
+          <div class="portfolio-name">
+            <h1 class="text-center">SOCCER-MANAGER WITH REALTIME MULTIPLAYER SIMULATION</h1>
+            <p class="portfolio-role">desktop-pc / steam / unity3d</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-4 portfolio-1">
+      <div class="portfolio">
+        <div class="portfolio-image">
+          <img src="images/portfolio/PortfolioWeb2020_BattleGems-1.jpg" alt="BattleGems">
+        </div>
+        <div class="portfolio-details">
+          <div class="portfolio-name">
+            <h1 class="text-center">BATLLE GEMS</h1>
+            <p class="portfolio-role">Android and iOS</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-4 portfolio-1">
+      <div class="portfolio">
+        <div class="portfolio-image">
+          <img src="images/portfolio/Coin-King800x600.jpg" alt="Coin-King">
+        </div>
+        <div class="portfolio-details">
+          <div class="portfolio-name">
+            <h1 class="text-center">COIN KING</h1>
+            <p class="portfolio-role">Android and iOS</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-4 portfolio-1">
+      <div class="portfolio">
+        <div class="portfolio-image">
+          <img src="images/portfolio/PortfolioWeb2020_TreeWorld.jpg" alt="TreeWorld">
+        </div>
+        <div class="portfolio-details">
+          <div class="portfolio-name">
+            <h1 class="text-center">TOONISH SIMULATION GAME PLAY WITH ONLINE & OFFLINE MODES</h1>
+            <p class="portfolio-role">android / ios / unity3d</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="more-btn">
+    <a href="our-work.html">View More</a>
+  </div>    
+</div>
+
+<div class="case-section" style="margin-top: 5%;">
+  <div class="study row-1">
+    <div class="case-head row-2">
+      <p class="head col-1">AWARDS & RECOGNITION</p>
+    </div>
+    <div class="case-link">
+      <div class="case-img">
+        <a href="#" style="font-weight: 500;">
+          <img src="images/achv-img/iso.jpg" alt="" class="image">
+          An ISO 9000:2015 Certified <br> Company
+        </a>
+      </div>
+      <div class="case-img">
+        <a href="#" style="font-weight: 500;">
+          <img src="images/achv-img/game-development-companies.png" alt="" class="image" >
+          Badge by Top Game <br> Development Company 2018
+        </a>
+      </div>
+      <div class="case-img" style="font-weight: 500;">
+        <a href="#" style="font-weight: 500;">
+          <img src="images/achv-img/top-app-development-companies.png" alt="" class="image">
+          Badge by Top App <br> Development Company 2018
+        </a>
+      </div>
+      <div class="case-img">
+        <a href="#" style="font-weight: 500;">
+          <img src="images/achv-img/unity-ac.jpg" alt="" class="image">
+          Professional Certication <br> from Unity
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="cntct-achvemnt">
+    <div class="contact">
+      <div class="contact-head row-2">
+        <p class="head col-1">CONTACT US TODAY. LET'S WORK TOGETHER</p>
+      </div>
+      <div class="text-1">
+        <p style="margin-bottom: 5%;">We have worked with clients ranging from young startups to mature Fortune companies who are very impressed with our service offerings. Brief us of your requirements, and we’ll get started on it right away.</p>
+      </div>
+      <form action="">
+        <input type="text" name="name" id="name" placeholder="Name*" required>
+        <input type="email" name="email" id="email" placeholder="Email*" required>
+        <input type="phone_number" name="phone_number" id="number" placeholder="Phone Number">
+        <input type="text" name="topic" id="topic" placeholder="Topic">
+        <textarea name="message" id="des" cols="30" rows="10" placeholder="We are eager to hear from you!"></textarea>
+        <input type="submit" value="Submit">
+      </form>
+    </div>
+  </div> 
+</div>
+
+
+
+<footer>
+  <div class="container">
+    <div class="f-services">
+      <h2>SERVICES</h2>
+      <ul>
+        <li><a href="game.html">Game Development</a></li>
+        <li><a href="nft.html">NFT Development</a></li>
+        <li><a href="vr-ar.html">VR & AR Solutions</a></li>
+        <li><a href="art&dsgn.html">Art & Design</a></li>
+        <li><a href="enterprise.html">Enterprise Solutions</a></li>
+        <li><a href="web.html">Web Development</a></li>
+      </ul>
+    </div>
+
+    <div class="f-portfolio">
+      <h2>OUR PORTFOLIO</h2>
+      <ul>
+        <li><a href="gam-work.html">Games</a></li>
+        <li><a href="entrprs-work.html">Applications</a></li>
+        <li><a href="vr-work.html">Virtual Reality</a></li>
+        <li><a href="augmented-work.html">Augmented Reality</a></li>
+        <li><a href="art-work.html">Art & Design</a></li>
+      </ul>
+    </div>  
+
+    <div class="f-news">
+      <h2>NEWS</h2>
+      <p>Apple features Hopster an <br> app developed by the team<br> at ABDULXAMILL_DEV TEAM.
+        <br> ABDULXAMILL_DEV TEAM is the <br> development partner of the <br> much-awaited NFT card <br> game Age of Gods. 
+      </p>
+    </div>
+
+    <div class="f-resources">
+      <h2>RESOURCES</h2>
+      <ul>
+        <li><a href="overview.html">Overview</a></li>
+        <li><a href="">Press Release</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="ft-process.html">Process</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="ft-end-bar">
+    <div class="f-end">
+      <div class="social">
+        <div class="cnt">
+          <p>Connect Us:</p>
+        </div>
+        <div class="fb">
+          <a href="https://t.me/Abdulxamillteam" target="_blank"><img src="images/telegram.svg" alt="" width="30px"></a>
+        </div>
+  
+        <!-- <div class="whatsapp">
+          <a href=""><i class="fa-brands fa-whatsapp"></i></a>
+        </div>-->
+  
+        <div class="discord">
+          <a href="https://discord.gg/N54HbPA429" target="_blank"><img src="images/discord.svg" alt="" width="30px"></a>
+        </div> 
+      </div>
+      <p>COPYRIGHT ©  2022<a href="#">ABDULXAMILL_DEV TEAM</a></p>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
